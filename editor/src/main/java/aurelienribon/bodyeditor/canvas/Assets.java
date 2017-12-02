@@ -59,8 +59,15 @@ public class Assets extends AssetManager {
             @Override
             public void changed(Object source, List<RigidBodyModel> added, List<RigidBodyModel> removed) {
                 for (RigidBodyModel body : removed) {
-                    TextureRegion region = rigidBodiesRegions.remove(body);
-                    if (region != null) region.getTexture().dispose();
+                    final TextureRegion region = rigidBodiesRegions.remove(body);
+                    if (region != null){
+                        Gdx.app.postRunnable(new Runnable() {
+                            @Override
+                            public void run() {
+                                region.getTexture().dispose();
+                            }
+                        });
+                    }
                 }
 
                 for (RigidBodyModel body : added) {
@@ -77,11 +84,11 @@ public class Assets extends AssetManager {
         return rigidBodiesRegions.get(body);
     }
 
-    private void load(RigidBodyModel body) {
+    private void load(final RigidBodyModel body) {
         if (!body.isImagePathValid()) return;
         if (body.getImagePath() == null) return;
 
-        File file = Ctx.io.getImageFile(body.getImagePath());
+        final File file = Ctx.io.getImageFile(body.getImagePath());
         Gdx.app.postRunnable(new Runnable() {
             @Override
             public void run() {
