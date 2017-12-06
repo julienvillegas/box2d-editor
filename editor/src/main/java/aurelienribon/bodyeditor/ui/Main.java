@@ -36,7 +36,11 @@ public class Main {
                 LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
                 config.useGL30 = false;
                 config.useHDPI = true;
-             //
+                config.vSyncEnabled = false; // Setting to false disables vertical sync
+                config.foregroundFPS = 30; // Setting to 0 disables foreground fps throttling
+                config.backgroundFPS = 30;
+
+                //
                 //
               //   ShaderProgram.prependVertexCode = "#version 140\n#define varying out\n#define attribute in\n";
               //  ShaderProgram.prependFragmentCode = "#version 140\n#define varying in\n#define texture2D texture\n#define gl_FragColor fragColor\nout vec4 fragColor;\n";
