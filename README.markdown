@@ -25,6 +25,18 @@ Features
 <p align="center"><img src="readmeImgs/pbe-workflow.jpg" alt="From the editor to the game"/></p>
 <p align="center"><img src="readmeImgs/pbe-02.jpg" alt="Features!"/></p>
 
+Get Started
+--------
+
+To get started:
+* Download [box2D-Editor](https://github.com/julienvillegas/box2d-editor/blob/develop/downloads/Box2d-Editor.jar)
+* open command line and run it 'java -jar Box2d-Editor.jar'
+* Import images, place vertices, and export your scene.
+* Download and Copy the [LibGDX Java loader](https://github.com/julienvillegas/box2d-editor/blob/develop/downloads/BodyEditorLoader.java) into your core module source folder 
+
+That's it, now you can import your object in your game.
+Check out [LibGDX.info](https://libgdx.info/box2d-importing-complex-bodies/) for some cool examples!
+
 Technologies
 --------
 
