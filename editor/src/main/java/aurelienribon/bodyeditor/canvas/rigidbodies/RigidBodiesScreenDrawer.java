@@ -26,9 +26,9 @@ public class RigidBodiesScreenDrawer {
     public void drawBallThrowPath(Vector2 p1, Vector2 p2) {
         if (p1 == null || p2 == null) return;
 
-        Gdx.gl30.glLineWidth(3);
-        Gdx.gl30.glEnable(Gdx.gl30.GL_BLEND);
-        Gdx.gl30.glBlendFunc(Gdx.gl30.GL_SRC_ALPHA, Gdx.gl30.GL_ONE_MINUS_SRC_ALPHA);
+        Gdx.gl.glLineWidth(3);
+        Gdx.gl.glEnable(Gdx.gl30.GL_BLEND);
+        Gdx.gl.glBlendFunc(Gdx.gl30.GL_SRC_ALPHA, Gdx.gl30.GL_ONE_MINUS_SRC_ALPHA);
 
         float w = 0.03f * camera.zoom;
 
