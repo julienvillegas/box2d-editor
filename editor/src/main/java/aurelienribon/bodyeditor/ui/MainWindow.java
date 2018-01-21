@@ -145,7 +145,7 @@ public class MainWindow extends javax.swing.JFrame {
         MouseListener mouseListener = new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
-                SwingHelper.browse(MainWindow.this, "http://code.google.com/p/box2d-editor/");
+                SwingHelper.browse(MainWindow.this, "https://github.com/MovingBlocks/box2d-editor");
             }
         };
 
