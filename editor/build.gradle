@@ -66,3 +66,17 @@ idea {
         downloadSources = true
     }
 }
+
+
+task clearJar(type: Delete) {
+    delete 'build/libs/myCompiledLibrary.jar'
+}
+ 
+task makeJar(type: Copy) {
+    from('build/classes/')
+    into('build/libs/')
+   // include('classes.jar')
+   // rename ('classes.jar', 'physics-body-editor.jar')
+}
+
+makeJar.dependsOn(clearJar,build)

@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Class-Path: tween-engine-api.jar jutils-1.0.0.jar gdx-box2d-1.6.4.jar 
+ jlayer-1.0.1-gdx.jar lwjgl-platform-2.9.2-natives-linux.jar lwjgl_uti
+ l-2.9.2.jar jinput-2.0.5.jar jinput-platform-2.0.5-natives-osx.jar co
+ mmons-io-2.1.jar gdx-backend-lwjgl-1.6.4.jar css-engine-swing-api.jar
+  gdx-platform-1.6.4.jar gdx-platform-1.6.4-natives-desktop.jar lwjgl-
+ platform-2.9.2-natives-windows.jar json-20090211.jar jinput-platform-
+ 2.0.5-natives-windows.jar lwjgl-platform-2.9.2-natives-osx.jar lwjgl-
+ 2.9.2.jar jorbis-0.0.17.jar gdx-1.6.4.jar balloontip-1.2.1.jar jinput
+ -platform-2.0.5-natives-linux.jar gdx-box2d-platform-1.6.4-natives-de
+ sktop.jar
+Main-Class: aurelienribon.bodyeditor.ui.Main
+
